@@ -1,0 +1,252 @@
+
+html, body {
+	max-width: 1000px;  /*definisce la dimensione massima della pagina. 1024 e' un buon compromesso */
+	margin: auto;   /*il browser si arrangia a centrare la pagina */
+	font-family: Georgia, Arial, sans-serif;
+	font-size: 100%;    /*con questa regola, il font e' grande quanto definiscono le preferenze dell'os dell'utente. Bisogna tenerne conto */
+    background: none;
+}
+
+body {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.AreaRiservata {
+    background: white;
+    padding: 1em;
+    border: inset 4px black;
+}
+
+.AreaRiservata h1 {
+    text-align: center;
+}
+
+#reindirizzamenti{
+    text-align: center;
+    display: inline-block;
+}
+
+.btn_btn-success {
+    text-decoration: none;
+    border: 2px groove black;
+    background: none;
+}
+
+#reindirizzamenti a{
+    border: 2px groove black;
+    margin: 0.5em;
+    padding: 0.4em;
+    float: left;
+}
+
+
+
+.AreaRiservata h2{
+    font-size: 1.4em;
+}
+
+#logout{
+    font-size: 1em;
+    padding: 0.4em;
+    color: black;
+    border: 2px groove black;
+}
+
+#myBtn {
+    display: none;
+}
+
+#adm-content, 
+#corpoform {
+    background: white;
+    padding: 0.6em;
+    border: inset 4px black;
+}
+
+#adm-content h1, 
+#corpoform h1 {
+    text-align: center;
+    margin: 0.2em;
+    font-size: 1.5em;
+}
+
+#adm-content h2, 
+#corpoform h2 {
+    text-align: left;
+    margin-left: 0.2em;
+    font-size: 1.1em;
+}
+
+#adm-content p {
+    margin-bottom: 0.2em;
+    font-size: 0.9em;
+}
+
+#corpoform p {
+    display: block;
+    font-weight: bold;
+}
+/* FORMS */
+
+#modifica{
+    text-decoration: none;
+}
+
+#input1,
+#tipo,
+#tipologia,
+#input2,
+#input3,
+#input4,
+#input5,
+#input6,
+
+#input8,
+#input9,
+#input10,
+#input11,
+
+#input12,
+#input13,
+#input14,
+#input15,
+
+#desc,
+#image {
+    padding: 0.5em;
+    display: block;
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
+}
+
+/*nome*/
+#input1{
+    width: 80%;
+}
+
+/*gradazione e temperatura*/
+#input2,
+#input4 {
+    width: 10%;
+}
+
+/*regione*/
+#input3{
+    width: 25%;
+}
+
+/*aroma*/
+#input5, #desc {
+    width: 45%;
+}
+
+/*descrizione*/
+#input6 {
+    width: 100%;
+}
+
+#input7{
+    width: 100%;
+    height: 15em;
+}
+
+/* INSERISCI PRENOTAZIONE */
+#input9,
+#input10
+{
+    width: 50%;
+}
+#input11
+{
+    width: 30%;
+}
+
+/* INSERISCI EVENTO */
+
+/*titolo*/
+#input12{
+    width: 100%;
+}
+
+/*descrizione evento*/
+#input13 {
+    width: 100%;
+    height: 15em;
+}
+
+.adm-form {
+    border: none;
+}
+
+/*====================================
+PAGINA ELIMINAZIONE EVENTI - PRODOTTI
+====================================*/
+
+table, 
+td, 
+th {
+    border: 1px solid black;
+    padding: 0.6em;
+    font-size: 1em;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, 
+th {
+  height: 2em;
+  vertical-align: bottom;
+}
+
+#input_elim{
+    padding: 0.8em;
+    margin-left: 0.5em;
+}
+
+/* ================================
+PAGINA COMMENTI
+==================================*/
+
+.pagina_commenti h1{
+    font-size: 1.5em;
+    text-align: left;
+}
+
+.intestazione_commento h2, p{
+    display: inline;
+    line-height: 2;
+}
+
+.commento_singolo{
+    border: inset 2px  black;
+    margin: 2em 1em 2em 1em;
+    padding: 0.8em;
+}
+
+.commento_singolo h2 {
+    font-size: 1em;
+}
+
+.commento_singolo p{
+    margin-left: 0.8em;
+    padding-right: 0.8em;
+}
+
+.oggetto{
+    border-top: 1px solid #ddd;
+    padding-top: 0.5em;
+}
+
+/*========================================================
+MENU AMMINISTRAZIONE
+=========================================================*/
+
+.header_amm,
+#hamburger,
+#menu_amm {
+    display: none;
+}

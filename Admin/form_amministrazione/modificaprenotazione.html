@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+	<head>
+		<title>Modifica prenotazione | Amministrazione - Non solo Grappe</title>
+        <meta charset="utf-8"/>
+        <meta name="title" content="Modifica la prenotazione selezionata" />
+        <meta name="description" content="In questa pagina potrai modificare la prenotazione che hai selezionato"/>
+		<meta name="keywords" content="amministrazione, admin, prodotto, evento, prenotazione, modifica, inserisci, aggiungi, elimina, seleziona"/>
+        <meta name="author" content="Giorgia Paparazzo, Mattia Cocco, Giulio Toffanello, Federico Consalvo"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <link rel="stylesheet" type="text/css" href="../amministrazione.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <link rel="icon" href="../../img/loghi/logo_sito_rid.png"/>
+        <link rel="stylesheet" type="text/css" media="print" href="../stampa_amm.css"/>
+        
+        <script src="../../javascript/validateEmail.js"></script>
+
+    </head>
+
+    <body>
+    
+        <div id="corpoform">
+            
+            <div id="hamburger">
+                    <button type="button" title="Apri menù"><span class="fa fa-bars"></span></button>
+                </div>
+            
+            <div class="header_amm">
+                <div id="menu-mob">  
+                <ul id="menu_amm">
+                    <li><a href="../amministrazione.php">Amministrazione</a></li>
+                    <li><a href="queryeliminaprodotto.php">Gestione Prodotti</a></li>
+                    <li><a href="queryeliminaeventi.php">Gestione Eventi</a></li>
+                    <li><a href="eliminaprenotazioni.php">Gestione Prenotazioni</a></li>
+                    <li><a href="gestionecommenti.php">Gestione Commenti</a></li>
+                </ul>
+                </div>
+            </div>
+            
+            <h1>Modifica la prenotazione:</h1>
+            <form action="modificaprenotazioni.php?idprenotazione=$idprenotazione$" method="post" enctype="multipart/form-data" onsubmit="return validateEmail()">
+                <fieldset class="adm-form">
+                    <legend class="ie" >Inserire la data nel formato anno - mese - giorno</legend> 
+                    <p>Id Prenotazione: $idprenotazione$</p>
+                    
+                    <label for="input9">Nominativo</label> $errornome$
+                    <input id="input9" type="text" name="nominativo" value="$nominativo$"/>
+
+                    <label for="input11">Numero posti</label> $errornum$
+                    <input id="input11" type="number" name="nposti" value="$nposti$"/>
+                     
+                    <label for="input14">Data evento:</label>
+                    <input id="input14" type="date" name="dataevento" value="$dataevento$"/>
+                
+                    <label for="input10" lang="en" xml:lang="en">E-mail</label><span id="error-mail"></span>$errormail$
+                    <input id="input10" type="email" name="email" value="$email$"/>
+
+                    <input class="btn_btn-success" type="submit" value="Modifica" name="upload"/>
+                </fieldset>
+            </form>
+            
+            <h2>Torna alla <a href="../../index.php"><span lang="en">home</span></a></h2>
+
+            <div>
+                <a href="#corpoform" id="myBtn" title="Torna su">
+                    <span class="fa fa-chevron-up"></span>
+                </a>
+            </div>
+        </div>   
+    
+    </body>
+</html>

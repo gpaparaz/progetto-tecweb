@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+	<head>
+  		<title>Modifica evento | Amministrazione - Non solo Grappe</title>
+       <meta charset="utf-8"/>
+  		<meta name="title" content="Modifica l'evento selezionato"/>
+  		<meta name="description" content="In questa pagina potrai modificare l'evento selezionato." />
+  		<meta name="keywords" content="amministrazione, admin, prodotto, evento, prenotazione, modifica, inserisci, aggiungi, elimina, seleziona"/>
+      <meta name="author" content="Giorgia Paparazzo, Mattia Cocco, Giulio Toffanello, Federico Consalvo"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+      <link rel="stylesheet" type="text/css" href="../amministrazione.css"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+      <link rel="icon" href="../../img/loghi/logo_sito_rid.png"/>
+      <link rel="stylesheet" type="text/css" media="print" href="../stampa_amm.css"/>
+        
+  </head>
+  
+  <body>
+    
+      <div id="corpoform">
+          
+          <div id="hamburger">
+                    <button type="button" title="Apri menù"><span class="fa fa-bars"></span></button>
+                </div>
+            
+            <div class="header_amm">
+                <div id="menu-mob">  
+                <ul id="menu_amm">
+                    <li><a href="../amministrazione.php">Amministrazione</a></li>
+                    <li><a href="queryeliminaprodotto.php">Gestione Prodotti</a></li>
+                    <li><a href="queryeliminaeventi.php">Gestione Eventi</a></li>
+                    <li><a href="eliminaprenotazioni.php">Gestione Prenotazioni</a></li>
+                    <li><a href="gestionecommenti.php">Gestione Commenti</a></li>
+                </ul>
+                </div>
+            </div>
+          
+          <h1>Modifica Evento:</h1>
+          <form action="modificaeventi.php?idevento=$idevento$" method="post" enctype="multipart/form-data">
+              <fieldset class="adm-form">
+                  <legend class="ie" >Inserire la data nel formato anno - mese - giorno</legend> 
+                  <p>Id Evento: $idevento$</p>
+
+                  <label for="input12">Titolo:</label>
+                  <input id="input12" type="text" name="evento" value="$evento$"/>
+                     
+                  <label for="input14">Data:</label>
+                  <input id="input14" type="date" name="dataZ" value="$dataZ$"/>
+                  
+                  <label for="input15">Posti disponibili: </label>
+                  <input id="input15" type="number" name="posti" value="$posti$" />
+
+                  <label for="desc">Descrizione immagine:</label>
+                  <input id="desc" type="text" name="alt" value="$alt$"/>
+                    
+                  <label for="image">Immagine:</label>
+                  <input id="image" type="file" name="image"/>
+                    
+                  <label for="input13">Descrizione evento:</label>
+                  <textarea id="input13" name="desc_evento" value="$desc_evento$">$desc_evento$</textarea>
+                        
+                  <input class="btn_btn-success" type="submit" value="Modifica evento" name="upload"/>       
+              </fieldset>
+          </form>
+                  
+          <h2>Torna alla <a href="../../index.php"><span lang="en">home</span></a></h2>
+
+          <div>
+                <a href="#corpoform" id="myBtn" title="Torna su">
+                    <span class="fa fa-chevron-up"></span>
+                </a>
+          </div>
+      </div>
+
+    </body>
+</html>

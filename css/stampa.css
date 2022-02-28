@@ -1,0 +1,487 @@
+* {    
+  padding: 0px;
+  margin: 0px;  
+  box-sizing: border-box;
+}
+
+html, body {
+  max-width: 1000px;  /*definisce la dimensione massima della pagina. 1024 e' un buon compromesso */
+  margin: auto;   /*il browser si arrangia a centrare la pagina */
+  font-family: Georgia, Arial, "Times New Roman", sans-serif, "Century gothic";
+  font-size: 100%; /*con questa regola, il font e' grande quanto definiscono le preferenze dell'os dell'utente. Bisogna tenerne conto */
+}
+
+body {
+  padding: 0px;
+}
+
+.telefono, .mobile_tel, #hamburger, #formRicerca, #menu-mob {
+  display: none;
+}
+
+@font-face {
+  font-family: 'Allura';
+  font-style: normal;
+  font-weight: 400;
+  src: url('font/allura-v7-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Allura Regular'), local('Allura-Regular'),
+       url('font/allura-v7-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('font/allura-v7-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('font/allura-v7-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('font/allura-v7-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('font/allura-v7-latin-regular.svg#Allura') format('svg'); /* Legacy iOS */
+}
+
+.header_front img {
+	height: 6em;
+	width: 6em;
+}
+
+.header_front h1 {
+	font-family: Allura;
+	font-weight: bold;
+	font-size: 3.8em;
+	float: right;
+	margin-right: 15%;
+	position: relative;
+	top: 0.2em;
+}
+
+/*================
+FINE MENU' PRINCIPALE*/
+
+.breadcrumbs {
+    background: white;
+    padding: 1em;
+    text-align: center;
+    height: auto;
+    border-bottom: 1px solid black;
+  	font-size: 1.2em;
+  	position: relative;
+  	top: -0.5em;
+}
+
+#contenuto {
+  background: white;
+  margin: auto;
+}
+
+.hero-image {  
+  height: 5.5em;
+  width: 100%;
+}
+
+.hero-text p {
+    font-size: 100%;
+    text-align: center;
+	display: block;
+}
+
+#venduti,
+#linkrap {
+    margin: auto;
+    padding: 0.5em;
+    font-size: 1.1em;
+    margin-top: 0.8em;
+	margin-bottom: 0.3em;
+}
+
+.homeContainersOut{
+    padding: 0.3em;
+    float: left;
+    width: 30%;
+    margin-left: 1.25%;
+    margin-right: 1.25%;
+}
+
+.homeContainersIn {
+    border: inset 1px black;
+    background: white;
+}
+
+.homeContainersIn img {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 0.2em;
+}
+
+.homeInfo { /* --> contenuto del prodotto*/
+    padding: 0.4em;
+}
+
+.homeInfo h1 { /* --> titolo del prodotto*/
+    border-bottom: solid black 2px;
+	font-size: 100%;
+	font-family: Arial;
+}
+
+.descrizione_prodotto{
+	padding: 0.5em;
+}
+
+.descrizione_prodotto p{
+	margin-top: 0.5em;
+	font-size: 100%;
+	font-family: Georgia;
+}
+
+.homeInfo a {
+	text-decoration: none;
+}
+
+.home_click h1{
+    font-size: 1em;
+    padding: 0.5em;
+    text-align: center;
+}
+
+/*======================
+FOOTER 
+=======================*/
+
+#footer {
+    background-color: white;
+    font-family: "Century Gothic";
+    font-size: 1em;
+    color: black;
+    margin-top: 0.5em;
+}
+
+.textfooter {
+  text-align: center;
+  display: inline-block;
+  margin-left: 20%;
+}
+
+.textfooter p {
+  font-size: 0.8em;
+}
+
+
+#myBtn .fa-chevron-up, .social_logo, .others_logo {
+  display: none;
+}
+
+/*================================================
+STYLE PAGINA EVENTI
+==================================================*/
+
+.evento_singolo{
+    border: 1px solid #ddd;
+}
+
+.paginaEventi {
+    padding: 1em;
+}
+
+.informazioni_evento{
+    padding: 1em;
+}
+
+/*===============================================
+PAGINA GRAPPE
+=================================================*/
+
+.hero-imageG {
+  height: 13em;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-textG p{
+  font-size: 100%;
+    text-align: center;
+}
+
+
+/*================================
+PAGINA LIQUORI
+================================*/
+.hero-imageL {
+    height: 10em;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-textL p{
+  font-size: 100%;
+  text-align: center; 
+}
+
+
+/*===============================================
+PAGINA VINI
+=================================================*/
+.hero-imageV {
+  height: 8em;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-textV p{
+  font-size: 100%;
+    text-align: center; 
+}
+
+/*=========================
+CONTATTI
+==========================*/
+
+.WhoContent{
+    background: white;
+    padding-left: 2em;
+    padding-right: 2em;
+    font-family: Georgia;
+}
+
+.WhoContent img{
+    display: none;
+}
+
+.hero-textC h1{
+    font-size: 120%;
+    text-align: center;
+}
+
+.WhoContent h1, p, h2{
+    padding-top: 1em;
+}
+
+table {
+    width: 75%;
+    margin: 0.4em;
+}
+
+table, th, td {
+  border: 1px solid black;
+    text-align: center;
+}
+
+/*===========
+STILE FORM CONTATTACI
+==============*/
+
+#contattaciform {
+    border: 2px dotted black;
+    padding: 2em;
+    margin-top: 1em;
+    background: white;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+#lname, 
+#fname, 
+#subject {
+	width: 100%; /* Full width */
+	padding: 0.9em; /* Some padding */  
+	border: 1px solid #ccc; /* Gray border */
+	border-radius: 4px; /* Rounded borders */
+	box-sizing: border-box; /* Make sure that padding and width stays in place */
+	margin-top: 0.4em; /* Add a top margin */
+	margin-bottom: 0.3em; /* Bottom margin */
+	resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+#invia_richiesta {
+	margin-top: 0.2em;
+	font-size: 1em;
+	border: 1px solid black;
+	color: black;
+	padding: 0.6em 1.5em;
+	cursor: pointer;
+	text-align: center;
+	font-weight: bold;
+}
+
+.site-form {
+  border: none;
+}
+
+/*================================================
+STYLE PAGINA EVENTI
+==================================================*/
+
+.titolo_evento_catalogo h1{
+	font-size: 1.6em;
+}
+
+.immagine_evento img{
+    float: left;
+    padding: 0.5em;
+    max-height: 10em;
+    margin: 1em;
+}
+
+/*================================
+PRENOTAZIONI
+================================*/
+.container_prenotazioni {
+  background-color: white;
+    border: 1px dotted black;
+    padding: 1em;
+    margin: 1em;
+}
+
+#input1 {
+  display: block;
+    width: 30%;
+    padding: 0.3em;
+    margin: 0.3em;
+}
+
+#input2 {
+  display: block;
+    width: 7%;
+    padding: 0.3em;
+    margin: 0.3em;
+}
+
+#input3, #input8 {
+  display: block;
+    width: 30%;
+    padding: 0.3em;
+    margin: 0.3em;
+}
+
+#evento{
+    display: block;
+    width: 98%;
+    padding: 0.3em;
+    margin: 0.3em;    
+}
+
+#prenotati {
+    margin-top: 0.2em;
+    font-size: 1em;
+    background-color: gray;
+    border: 1px solid black;
+    color: black;
+    padding: 0.6em 1.5em;
+    text-align: center;
+}
+
+/*=========================================================
+PAGINA CATALOGO MULTIPLO HTML e CATALOGO HTML
+==========================================================*/
+.titolopagina h1{
+    padding: 0.4em;
+    font-size: 1.8em;
+}
+
+
+.catalogoProdotti{
+    float: left;
+    width: 30%;
+    margin-left: 1.50%;
+    margin-right: 1.50%;
+    padding-bottom: 1em;
+}
+
+.descrizione_rapida{
+    border: 4px solid black;
+    min-height: 18em;
+    position: relative;
+}
+
+.titoli_prodotto_catalogo h1{
+    font-size: 1.1em;   
+}
+
+.titoli_prodotto_catalogo p{
+    display: none;   
+}
+
+.titoli_prodotto_catalogo h2{
+    font-size: 1em;  
+    font-weight: normal;
+    font-style: oblique;
+}
+
+.immagine_prodotto_catalogo img{
+    width: 75%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 0.3em;
+}
+
+.informazioni_brevi_catalogo{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/*=========================================================
+PAGINA SINGOLO PRODOTTO 
+==========================================================*/
+
+#immagine_prodotto img{
+    max-width: 35%;
+    margin:2em;
+}
+
+.caratteristiche_prodotto {
+    border: 1px dotted black;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 1em;
+}
+
+/*==================================
+LOGIN
+===================================*/
+
+#contenutologin h1 {
+    padding: 0.5em;
+    background: white;
+    font-size: 1em;
+    margin-left: 0.5em;
+}
+
+
+.login_container input[type=text], input[type=password]{
+  width: 100%; 
+  padding: 0.8em; 
+  border: 1px solid #ccc; 
+  border-radius: 4px;
+  box-sizing: border-box; 
+  margin-top: 0.5em; 
+  margin-bottom: 0.5em; 
+  resize: vertical 
+}
+
+.modal-content {
+	margin: 1em auto 1em auto; 
+    border: 1px dotted black;
+	width: 80%; 
+}
+
+.login_container {
+  width: 100%;
+  padding: 2em;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+/*==========================================
+PAGINA RESULT per 404, prenotati, 
+============================================*/
+
+.pagina_result h1,h2{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-size: 100%;
+}
+
+.pagina_result p{
+    font-size: 100%
+}

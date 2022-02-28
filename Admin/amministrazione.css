@@ -1,0 +1,492 @@
+
+html, body {
+	max-width:950px;  /*definisce la dimensione massima della pagina. 1024 e' un buon compromesso */
+	margin: auto;   /*il browser si arrangia a centrare la pagina */
+	font-family: Georgia, Arial, sans-serif;
+	font-size: 100%;    /*con questa regola, il font e' grande quanto definiscono le preferenze dell'os dell'utente. Bisogna tenerne conto */
+    background: url(../img/vignaamm3.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+body {
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+.AreaRiservata {
+    background: white;
+    padding: 3em;
+    border: inset 4px #990000;
+}
+
+.AreaRiservata h1 {
+    text-align: center;
+}
+
+#reindirizzamenti{
+    margin: 2em 0em 2em 0em;
+    text-align: center;
+}
+
+#reindirizzamenti a{
+    border: 2px groove #00b300;
+    margin-right: 0.8em;
+}
+
+.btn_btn-success {
+    background: #adebad;
+    font-size:1em;
+    margin-top: 1em;
+    padding: 0.8em;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.AreaRiservata h2{
+    font-size: 1.4em;
+    padding: 1em 0em 1em 1em;
+}
+
+#logout{
+    background: #80dfff;
+    font-size:1em;
+    padding: 0.8em;
+    margin: 1em;
+    text-decoration: none;
+    color:black;
+    border: 2px groove #0099cc;
+}
+
+#myBtn {
+    position: fixed;
+    bottom: 2.4em;
+    right: 3em;
+    z-index: 99;
+    border: none;
+    outline: none;
+    padding: 1em;
+    border-radius: 0.8em;
+    background: #707070;
+}
+
+#myBtn span {
+    color: black;
+}
+
+.fa-chevron-up:before{
+    content:"\f077";
+}
+
+#adm-content, 
+#corpoform {
+    background: white;
+    padding: 1.8em;
+    border: inset 4px #990000;
+}
+
+#adm-content h1, 
+#corpoform h1 {
+    text-align: center;
+}
+
+#adm-content h2, 
+#corpoform h2 {
+    text-align: left;
+    margin-left: 0.2em;
+    font-size: 1.4em;
+}
+
+#adm-content p {
+    margin-bottom: 0.2em;
+    font-size: 1.2em;
+}
+
+#corpoform p {
+    display: block;
+    font-weight: bold;
+}
+/* FORMS */
+
+#modifica{
+    text-decoration: none;
+}
+
+#input1,
+#tipo,
+#tipologia,
+#input2,
+#input3,
+#input4,
+#input5,
+#input6,
+
+#input8,
+#input9,
+#input10,
+#input11,
+
+#input12,
+#input13,
+#input14,
+#input15,
+
+#desc,
+#image {
+    padding: 0.5em;
+    display: block;
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
+}
+
+/*nome*/
+#input1{
+    width: 80%;
+}
+
+/*gradazione e temperatura*/
+#input2,
+#input4 {
+    width: 10%;
+}
+
+/*regione*/
+#input3{
+    width: 25%;
+}
+
+/*aroma*/
+#input5 {
+    width: 45%;
+}
+
+/*descrizione*/
+#input6 {
+    width: 100%;
+}
+
+#input7{
+    width: 100%;
+    height: 15em;
+}
+
+/* INSERISCI PRENOTAZIONE */
+#input9,
+#input10
+{
+    width: 50%;
+}
+#input11,
+#desc {
+    width: 30%;
+}
+
+/* INSERISCI EVENTO */
+
+/*titolo*/
+#input12{
+    width: 100%;
+}
+
+/*descrizione evento*/
+#input13 {
+    width: 100%;
+    height: 15em;
+}
+
+.adm-form {
+    border: none;
+}
+
+/*====================================
+PAGINA ELIMINAZIONE EVENTI - PRODOTTI
+====================================*/
+
+table, td, th {
+    border: 1px solid black;
+    padding: 0.7em;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  height: 2em;
+  vertical-align: bottom;
+}
+
+#input_elim{
+    padding: 0.8em;
+    margin-left: 0.5em;
+}
+
+
+/* ================================
+PAGINA COMMENTI
+==================================*/
+
+.pagina_commenti h1{
+    font-size: 1.5em;
+    text-align: left;
+}
+
+.intestazione_commento h2, p{
+    display: inline;
+    line-height: 2;
+}
+
+.intestazione_commento p{
+    display: inline;
+    line-height: 2;
+}
+
+.commento_singolo{
+    border: inset 2px  #d9d9d9;
+    margin: 2em 1em 2em 1em;
+    padding: 0.8em;
+}
+
+.commento_singolo h2 {
+    font-size: 1em;
+}
+
+.commento_singolo p{
+    padding-right: 0.8em;
+}
+
+.oggetto{
+    border-top: 1px solid #ddd;
+    padding-top: 0.5em;
+}
+
+
+/*========================================================
+MENU AMMINISTRAZIONE
+=========================================================*/
+
+.header_amm {
+	background: #660000;
+	display: block;
+	z-index: 100;
+	margin: auto;
+	width: 100%;
+}
+
+#menu_amm li{
+    list-style-type: none;
+	display: inline-block;
+	z-index: 6;
+    padding: 1em;
+    font-size: 1em;
+	border-right: 2px solid black;
+}
+
+#menu_amm a{
+    text-align: center;
+    
+}
+
+#menu_amm>li>a {
+    color:white;
+    text-decoration: none;
+    
+}
+
+#menu_amm{
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+
+#menu_amm>li:last-child {
+	border-right: none;
+}
+
+#menu_amm>li>a:visited{
+        color: #FFDD99;
+    }
+
+@media only screen and (min-width: 801px) {
+
+    #hamburger {
+        display: none;
+    }
+    .fa-caret-down:before {
+    content: "\f0d7";
+}
+    
+}
+
+/*============================
+
+================================*/
+ 
+#error-elem {
+    color:red;
+    padding: 0.5em;
+}
+
+.ie {
+        display: none;
+    }
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+     .ie {
+         font-size:1em;
+         display: block;
+    }
+}
+
+@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0)
+{ 
+    @media {
+        .ie {
+             font-size: 1em;
+             display: block;
+        }
+    }
+}
+
+/*=============================================================================================
+                AMMINISTRAZIONE MOBILE
+=============================================================================================*/
+
+@media screen and (max-width: 900px)
+{
+    body {
+        padding: 0em;
+        
+    }
+    #reindirizzamenti a{
+        display: block;
+        width: 30%;
+        margin-bottom: 1em;
+    }
+    
+}
+
+@media only screen and (max-width: 800px) {
+	
+
+    #hamburger button {
+        font-size: 2em;
+        border: none;
+        background: none;
+    }
+
+    #hamburger span {
+        cursor: pointer;
+    }
+
+    #hamburger.mobile {
+        display: block;
+    }
+
+    #menu-mob.mobile.show {
+        display: block;
+    }
+
+    #menu-mob.mobile {
+        display: none;
+    }
+
+    .fa-bars:before {
+        content:"\f0c9";
+        color: black;
+    }
+
+    #menu_amm {
+        display: block;
+        padding-right: 2em;
+    }
+     
+    #menu_amm li{
+        border-right: none;
+        width: 100%;
+        text-align: center;
+        border-bottom: 2px solid black;
+        padding-right: 0em;
+    }
+    
+    #menu_amm li:last-child{
+        border: none;
+    }
+    
+    #menu_amm>li:hover {
+        background: #7A0000;
+    }
+
+    #menu_amm>li>a:visited{
+        color: #FFDD99;
+    }
+
+    #menu_amm>li>a:link {
+        color: white;
+        text-decoration: none;
+    }
+
+
+    .fa-caret-down:before {
+        display: none;
+    }
+
+    table,
+    tr,
+    th,
+    td {
+            padding: 0.4em;
+            margin: 0;
+            font-size: 0.8em;
+        }
+}
+@media screen and (max-width: 600px)
+{
+    body{
+        font-size: 80%;
+    }
+    
+    #adm-content{
+        padding: 1em;
+    }
+    table, td, th {
+    padding: 0.3em;
+    }
+
+    table {
+      font-size: 80%;
+    }
+    
+     #myBtn {
+        bottom: 1.6em;
+        right: 1.6em;
+      }
+}
+
+
+@media only screen and (max-width: 500px) {
+    
+    #desc,
+    #input3, 
+    #input5,
+    #input9,
+    #input11, 
+    #input10 {
+        width: 100%;
+    }
+    
+    #input4{
+        width: 30%;
+    }
+    
+    #myBtn {
+    bottom: 1em;
+    right: 1.2em;
+  }
+    
+}
+

@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+    <head>
+        <title>Gestione Commenti | Amministrazione - Non solo Grappe</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="title" content="Visualizza le richieste inviate dagli utenti"/>
+        <meta name="description" content="In questa pagina potrai visualizzare tutte le richieste inviate dagli utenti" />
+        <meta name="keywords" content="amministrazione, admin, prodotto, evento, prenotazione, modifica, inserisci, aggiungi, elimina, seleziona"/>
+        <meta name="author" content="Giorgia Paparazzo, Mattia Cocco, Giulio Toffanello, Federico Consalvo"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <link rel="stylesheet" type="text/css" href="../amministrazione.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <link rel="icon" href="../../img/loghi/logo_sito_rid.png"/>
+        <link rel="stylesheet" type="text/css" media="print" href="../stampa_amm.css"/>
+        <script type="text/javascript" src="../../javascript/common.js"></script>
+        <script type="text/javascript" src="../../javascript/header.js"></script>
+          
+    </head>
+    
+    <body>
+        <div id="adm-content">
+            <div id="hamburger">
+                    <button type="button" title="Apri menù"><span class="fa fa-bars"></span></button>
+                </div>
+            
+            <div class="header_amm">
+                <div id="menu-mob">  
+                <ul id="menu_amm">
+                    <li><a href="../amministrazione.php">Amministrazione</a></li>
+                    <li><a href="queryeliminaprodotto.php">Gestione Prodotti</a></li>
+                    <li><a href="queryeliminaeventi.php">Gestione Eventi</a></li>
+                    <li><a href="eliminaprenotazioni.php">Gestione Prenotazioni</a></li>
+                    <li><a href="gestionecommenti.php">Gestione Commenti</a></li>
+                </ul>
+                </div>
+            </div>
+            <h1>Visualizza i commenti lasciati dagli utenti:</h1>
+            $riga_commenti$
+            
+            <h2>Torna alla <a href="../../index.php"><span lang="en" xml:lang="en">home</span></a></h2>
+            <div>
+                <a href="#adm-content" id="myBtn" title="Torna su">
+                    <span class="fa fa-chevron-up"></span>
+                </a>
+            </div>        
+        </div>
+
+    </body>
+
+</html>
