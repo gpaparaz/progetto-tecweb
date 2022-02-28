@@ -1,0 +1,79 @@
+<div>
+	<div id="header">
+			<a href="#navigation_bar" class="sr-only">Vai al menù di navigazione</a>
+			<a href="#contenuto" class="sr-only">Vai al contenuto</a>
+			<p class="telefono">Telefono: <a href="tel:049-3130278">0493130278</a> </p>			
+			<div class="header_front">
+				<img src="img/logononsolograpperid.png" alt="logo del sito Non solo Grappe"/>
+				<h1>Non solo Grappe</h1>
+			</div>
+	</div>
+
+	<div id="navigation_bar">
+
+		<p class="mobile_tel">Telefono: <a href="tel:049-3130278">0493130278</a></p>
+		<div id="hamburger">
+			<button type="button" title="Apri menù"><span class="fa fa-bars"></span></button>
+		</div>
+
+		<div id="menu-mob">		
+
+			<ul class="main-menu">
+				<li><a href="index.php"><span lang="en" xml:lang="en">Home</span></a></li>
+						
+				<li><a href="chisiamo.php">Chi siamo</a></li>
+						
+				<li class="menu-item">
+					<a href="paginagrappe.php">Grappe <span class="fa fa-caret-down"></span></a>
+					<ul class="sub-menu">
+						<li><a href="catalogo.php?tipoalc=Grappa&tipologia=Barricata">Barricate</a></li>
+						<li><a href="catalogo.php?tipoalc=Grappa&tipologia=Aromatizzata">Aromatizzate</a></li>
+						<li><a href="catalogo.php?tipoalc=Grappa&tipologia=Giovane">Giovani</a></li>
+					</ul>
+				</li>
+					   
+				<li class="menu-item">
+					<a href="paginaliquori.php">Liquori <span class="fa fa-caret-down"></span></a>
+					<ul class="sub-menu">
+						<li><a href="catalogo.php?tipoalc=Liquore&tipologia=Fruttato">Fruttati</a></li>
+						<li><a href="catalogo.php?tipoalc=Liquore&tipologia=Speziato">Speziati</a></li>
+						<li><a href="catalogo.php?tipoalc=Liquore&tipologia=Distillato">Distillati</a></li>
+					</ul>
+				</li>
+						
+				<li class="menu-item">
+					<a href="paginavini.php">Vini <span class="fa fa-caret-down"></span></a>
+					<ul class="sub-menu">
+						<li><a href="catalogo.php?tipoalc=Vino&tipologia=Rosso">Rossi</a></li>
+						<li><a href="catalogo.php?tipoalc=Vino&tipologia=Bianco">Bianchi</a></li>
+					</ul>
+				</li>
+				
+				<li><a href="eventi.php">Eventi</a></li>
+				<li><a href="form_prenotazioni.php">Prenota</a></li>
+			</ul>
+						
+			<form id="formRicerca" method="post" action="queryricerca.php">
+				<fieldset class="search-container">
+						<div id="categoria" class="navbar-select">
+							<label id="selectCategory" for="inputState" class="sr-only">Seleziona la categoria in cui desideri effettuare la ricerca</label>
+							<select id="inputState" name="category" class="form-control" title="Seleziona la categoria in cui desideri effettuare la ricerca">
+								<option value="prodotti">Prodotti</option>
+								<option value="eventi">Eventi</option>
+							</select>
+						</div>
+						<label id="text" for="search-text" class="sr-only">Inserisci qui il testo della ricerca</label>
+						<input id="search-text" type="text" name="cerca" title="Testo della ricerca"/>
+						<input id="search-site" type="submit" title="Tasto di ricerca" value="Cerca"/>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+	
+	<div class="breadcrumbs">
+		<p>Ti trovi in: <a href="index.php"><span lang="en" xml:lang="en"> Home</span></a> $breadcrumb$ </p>
+	</div>
+	
+</div>
+		
+<div id="contenuto">
